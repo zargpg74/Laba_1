@@ -57,13 +57,13 @@ int Input(int** matrix, int n)
 		printf("Ваша матрица: \n");
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
-				fscanf_s(Input, "%d", &matrix[i][j]);
+				fscanf_s(input, "%d", &matrix[i][j]);
 				printf("%d ", matrix[i][j]);
 			}
 			printf("\n");
 		}
 		printf("\n");
-		err = fclose(Input);
+		err = fclose(input);
 		ErrorOpen(err);
 		break;
 
